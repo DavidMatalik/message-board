@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome #{title}
+  ul 
+    each val in messages
+      li= `Text: ${val.text} / User: ${val.user} / Date: ${val.added}`
+  a(href='/new') Create new message

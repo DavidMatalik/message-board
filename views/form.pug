@@ -1,0 +1,8 @@
+extends layout
+
+block content 
+  h1 Create a new message!
+  form(action='/new', method='POST')
+    input(type='text', name='text', value='')
+    input(type='text', name='user', value='')
+    input(type='submit', value='Submit')
